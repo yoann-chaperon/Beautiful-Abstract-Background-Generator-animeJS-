@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Torus Notched";
+    src: url("./font/torus.ttf"
+        );
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Torus Notched";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #202020;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+    
+}
+
+.block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+}
+
+.block:nth-child(3n + 2) {
+    background: #444;
+}
+
+.block:nth-child(3n + 3) {
+    background: #FF9213;
+}
